@@ -4,7 +4,7 @@ public class TipCalculator {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        //initializing variables or storing values
+        //storing values of user input
 
         System.out.println();
         System.out.print("Enter your total bill: ");
