@@ -22,8 +22,16 @@ public class TipCalculator {
         double tipPerPerson = totalTip/numPeople;
         double totalPerPerson = billWithTip/numPeople;
 
-        
+        //display
+
+        System.out.println();
+        System.out.println("Your tip amount is $" + totalTip);
+        System.out.println("Your total bill with the tip is $" + billWithTip);
+        System.out.println("The tip per person is $" + tipPerPerson);
+        System.out.println("The total per person is $" + totalPerPerson);
+
 
     }
+
 
 }
