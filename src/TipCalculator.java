@@ -6,7 +6,7 @@ public class TipCalculator {
 
         //initializing variables or storing values
 
-
+        System.out.println();
         System.out.print("Enter your total bill: ");
         double totalBill = s.nextDouble();
         System.out.print("Enter your tip percentage: ");
@@ -33,7 +33,7 @@ public class TipCalculator {
         round(billWithTip);
         System.out.println();
 
-        System.out.print("The tip per person is $");
+        System.out.print("The tip per person (" + numPeople + " people) is $");
         round(tipPerPerson);
         System.out.println();
 
@@ -48,6 +48,4 @@ public class TipCalculator {
         //the 2f means that you want 2 decimals places after the decimal
 
     }
-
-
 }
