@@ -33,7 +33,11 @@ public class TipCalculator {
         round(billWithTip);
         System.out.println();
 
-        System.out.print("The tip per person (" + numPeople + " people) is $");
+        if (numPeople == 1) {
+            System.out.print("The tip per person (" + numPeople + " person) is $");
+        }else{
+            System.out.print("The tip per person (" + numPeople + " people) is $");
+        }
         round(tipPerPerson);
         System.out.println();
 
