@@ -25,30 +25,22 @@ public class TipCalculator {
         //display
 
         System.out.println();
-        System.out.print("Your tip amount is $");
-        round(totalTip);
-        System.out.println();
+        System.out.println("Your tip amount is $" + round(totalTip));
 
-        System.out.print("Your total bill with the tip is $");
-        round(billWithTip);
-        System.out.println();
+        System.out.println("Your total bill with the tip is $" + round(billWithTip));
 
         if (numPeople == 1) {
-            System.out.print("The tip per person (" + numPeople + " person) is $");
+            System.out.println("The tip per person (" + numPeople + " person) is $" + round(tipPerPerson));
         }else{
-            System.out.print("The tip per person (" + numPeople + " people) is $");
+            System.out.println("The tip per person (" + numPeople + " people) is $" + round(tipPerPerson));
         }
-        round(tipPerPerson);
-        System.out.println();
 
-        System.out.print("The total per person is $");
-        round(totalPerPerson);
-        System.out.println();
+        System.out.println("The total per person is $" + round(totalPerPerson));
 
     }
 
-    public static void round(double num) {           //procedure for rounding
-        System.out.printf(("%.2f"), num);    //num is the number you want to round
+    public static String round(double num) {           //procedure for rounding
+        return String.format("%.2f", num);
         //the 2f means that you want 2 decimals places after the decimal
 
     }
